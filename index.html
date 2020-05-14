@@ -5,11 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Netlify's Serverless Form Testing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1>Testing Netlify's Serverless Form Submission</h1>
+  <h1>Serverless Form Submissions</h1>
+  <p>This form is connected using Netlify, an external service that handles form submissions for us.
+
+  Normally, if we built a form, we would have to connect it to a server to listen and save form responses, but in this case Netlify does that for us.</p>
   <form name="contact" method="POST" data-netlify="true">
     <p>
       <label>Your Name: <input type="text" name="name" /></label>
