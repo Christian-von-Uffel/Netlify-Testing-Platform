@@ -1,8 +1,10 @@
 body {
   font-family: 'Source Code Pro', monospace;
-  max-width: 800px;
+  max-width: 720px;
   padding-left: 60px;
   padding-right: 60px;
+  padding-top: 48px;
+  padding-bottom: 90px;
   margin: auto;
   }
 h1 {
@@ -31,6 +33,9 @@ p {
   font-size: 18px;
   margin: auto;
   white-space: pre-line;
+}
+label {
+  font-weight: 500;
 }
 input {
   font-family: 'Source Code Pro', monospace !important;
