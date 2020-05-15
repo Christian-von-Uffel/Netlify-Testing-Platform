@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1>Serverless Form Submissions</h1>
-  <p>This form is connected using Netlify, an external service that handles form submissions for us.
+  <h1>Serverless(?) Form Submissions</h1>
+  <p>This form is connected using <a href="https://www.netlify.com">Netlify</a>, an external service well known for hosting static websites, but in this case it also handles form submissions.
 
-  Normally, if we built a form, we would have to connect it to a server to listen and save form responses, but in this case Netlify does that for us.</p>
+  Normally, if we built a form, we would have to connect it to a server to listen and save our form responses, but in this case Netlify does that for us by detecting a custom form attribute they call "data-netlify" to trigger their server connection to our form and even display their thank you page using react.</p>
   <form name="contact" method="POST" data-netlify="true">
     <p>
-      <label>Your Name: <input type="text" name="name" /></label>
+      <label>Your First Name: <input type="text" name="name" /></label>
     </p>
     <p>
       <label>Your Email: <input type="email" name="email" /></label>
     </p>
-    <p>
+    <!-- <p>
       <label>Your Role: <select name="role[]" multiple>
         <option value="leader">Leader</option>
         <option value="follower">Follower</option>
@@ -28,9 +28,9 @@
     </p>
     <p>
       <label>Message: <textarea name="message"></textarea></label>
-    </p>
+    </p> -->
     <p>
-      <button type="submit">Send</button>
+      <button type="submit">Submit</button>
     </p>
   </form>
   <div id="double-fade">
