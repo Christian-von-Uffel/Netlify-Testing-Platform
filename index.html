@@ -10,11 +10,11 @@
 </head>
 <body>
   <h1>Serverless(?) Form Submissions</h1>
-  <p>Normally, if we built a form on a website, we would have to connect it to a server that would listen and save our form's responses.
+  <p>Normally, if you built a form on a website, you would have to connect it to a server that would listen and save your form's responses.
 
   But in this case, we can get around that problem by hosting our static website on <a href="https://www.netlify.com">Netlify</a>, an external service known for hosting static websites, but can also handle form submissions.
 
-  Netlify handles form without us needing to connect a server by detecting a custom form attribute they call "data-netlify" to trigger their server connection to our form and even display their thank you page using react.</p>
+  Netlify handles form submissions without needing us to manually set up a server by already having a server set up to receive our form submissions and detecting them using a custom form attribute they call "data-netlify" to trigger their server connection to our form and even display a thank you page using react.</p>
   <form name="contact" method="POST" data-netlify="true">
     <p>
       <label>Your First Name: <input type="text" name="name" /></label>
